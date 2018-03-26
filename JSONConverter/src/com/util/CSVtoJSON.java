@@ -12,7 +12,7 @@ public class CSVtoJSON extends JFrame{
     private static BufferedWriter write;
 
     public CSVtoJSON(){
-        FileNameExtensionFilter filter = new FileNameExtensionFilter("comma separated values", "csv");
+        FileNameExtensionFilter filter = new FileNameExtensionFilter("comma separated values", new String[] {"csv"});
         JFileChooser choice = new JFileChooser();
         choice.setFileFilter(filter); //limit the files displayed
 
